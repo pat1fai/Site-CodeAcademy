@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог — CodeAcademy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <button class="theme-switcher" aria-label="Змінити тему">
+      <i class="fas fa-moon"></i>
+    </button>
+    <div class="header-content">
+      <div class="logo">
+        <i class="fas fa-code"></i>
+        <h1>CodeAcademy</h1>
+      </div>
+      <p>Ласкаво просимо на платформу CodeAcademy, де ти можеш почати свій шлях у світ програмування!</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html"><i class="fas fa-home"></i> Головна</a>
+    <a href="about.html"><i class="fas fa-info-circle"></i> Про нас</a>
+    <a href="courses.html"><i class="fas fa-graduation-cap"></i> Курси</a>
+    <a href="blog.html" class="active"><i class="fas fa-blog"></i> Блог</a>
+    <a href="teachers.html"><i class="fas fa-chalkboard-teacher"></i> Викладачі</a>
+    <a href="success.html"><i class="fas fa-trophy"></i> Успіхи</a>
+    <a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Контакти</a>
+  </nav>
+
+  <main>
+    <section class="blog-section">
+      <h2>Блог</h2>
+      <div class="blog-filters">
+        <button class="filter-btn active" data-category="all">Всі</button>
+        <button class="filter-btn" data-category="news">Новини</button>
+        <button class="filter-btn" data-category="tips">Поради</button>
+        <button class="filter-btn" data-category="events">Події</button>
+      </div>
+      
+      <div class="blog-grid">
+        <article class="blog-card" data-category="news">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Новини програмування">
+          </div>
+          <div class="blog-content">
+            <span class="blog-category">Новини</span>
+            <h3>Нові технології в програмуванні 2024</h3>
+            <p>Огляд найновіших технологій та трендів у світі програмування...</p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> 15 березня 2024</span>
+              <span><i class="far fa-comment"></i> 23 коментарі</span>
+            </div>
+            <a href="#" class="read-more">Читати далі</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="tips">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Поради для початківців">
+          </div>
+          <div class="blog-content">
+            <span class="blog-category">Поради</span>
+            <h3>Як почати вивчати програмування</h3>
+            <p>Поради для початківців: з чого почати та як не втратити мотивацію...</p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> 10 березня 2024</span>
+              <span><i class="far fa-comment"></i> 15 коментарів</span>
+            </div>
+            <a href="#" class="read-more">Читати далі</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="events">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Майстер-клас">
+          </div>
+          <div class="blog-content">
+            <span class="blog-category">Події</span>
+            <h3>Майстер-клас з веб-розробки</h3>
+            <p>Запрошуємо на безкоштовний майстер-клас з веб-розробки...</p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> 5 березня 2024</span>
+              <span><i class="far fa-comment"></i> 8 коментарів</span>
+            </div>
+            <a href="#" class="read-more">Читати далі</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="news">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Новини програмування">
+          </div>
+          <div class="blog-content">
+            <span class="blog-category">Новини</span>
+            <h3>Тенденції розробки в 2024 році</h3>
+            <p>Які технології будуть найбільш затребуваними в наступному році...</p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> 1 березня 2024</span>
+              <span><i class="far fa-comment"></i> 12 коментарів</span>
+            </div>
+            <a href="#" class="read-more">Читати далі</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="tips">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Поради для початківців">
+          </div>
+          <div class="blog-content">
+            <span class="blog-category">Поради</span>
+            <h3>Ефективні методи навчання</h3>
+            <p>Як максимально ефективно вивчати програмування...</p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> 25 лютого 2024</span>
+              <span><i class="far fa-comment"></i> 18 коментарів</span>
+            </div>
+            <a href="#" class="read-more">Читати далі</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="events">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Майстер-клас">
+          </div>
+          <div class="blog-content">
+            <span class="blog-category">Події</span>
+            <h3>Хакатон для початківців</h3>
+            <p>Запрошуємо на хакатон для початківців у програмуванні...</p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> 20 лютого 2024</span>
+              <span><i class="far fa-comment"></i> 5 коментарів</span>
+            </div>
+            <a href="#" class="read-more">Читати далі</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="pagination">
+        <button class="pagination-btn active">1</button>
+        <button class="pagination-btn">2</button>
+        <button class="pagination-btn">3</button>
+        <button class="pagination-btn">...</button>
+        <button class="pagination-btn">10</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CodeAcademy. Всі права захищено.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 

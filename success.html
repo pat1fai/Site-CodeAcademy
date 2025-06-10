@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Успіхи — CodeAcademy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <button class="theme-switcher" aria-label="Змінити тему">
+      <i class="fas fa-moon"></i>
+    </button>
+    <div class="header-content">
+      <div class="logo">
+        <i class="fas fa-code"></i>
+        <h1>CodeAcademy</h1>
+      </div>
+      <p>Ласкаво просимо на платформу CodeAcademy, де ти можеш почати свій шлях у світ програмування!</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html"><i class="fas fa-home"></i> Головна</a>
+    <a href="about.html"><i class="fas fa-info-circle"></i> Про нас</a>
+    <a href="courses.html"><i class="fas fa-graduation-cap"></i> Курси</a>
+    <a href="blog.html"><i class="fas fa-blog"></i> Блог</a>
+    <a href="teachers.html"><i class="fas fa-chalkboard-teacher"></i> Викладачі</a>
+    <a href="success.html" class="active"><i class="fas fa-trophy"></i> Успіхи</a>
+    <a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Контакти</a>
+  </nav>
+
+  <main>
+    <section class="success-section">
+      <h2>Історії успіху</h2>
+      
+      <div class="success-filters">
+        <button class="filter-btn active" data-category="all">Всі</button>
+        <button class="filter-btn" data-category="web">Веб-розробка</button>
+        <button class="filter-btn" data-category="python">Python</button>
+        <button class="filter-btn" data-category="java">Java</button>
+      </div>
+
+      <div class="success-grid">
+        <div class="success-card" data-category="web">
+          <div class="success-image">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Студент веб-розробки">
+          </div>
+          <div class="success-content">
+            <span class="success-category">Веб-розробка</span>
+            <h3>Максим Коваленко</h3>
+            <p class="success-description">Після завершення курсу отримав роботу в провідній IT-компанії як Frontend Developer</p>
+            <div class="success-meta">
+              <span><i class="fas fa-graduation-cap"></i> Курс: HTML & CSS</span>
+              <span><i class="fas fa-calendar"></i> 2024</span>
+            </div>
+            <a href="#" class="read-more">Читати історію</a>
+          </div>
+        </div>
+
+        <div class="success-card" data-category="python">
+          <div class="success-image">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Студентка Python">
+          </div>
+          <div class="success-content">
+            <span class="success-category">Python</span>
+            <h3>Анна Петренко</h3>
+            <p class="success-description">Створила власний стартап з розробки штучного інтелекту після завершення курсу</p>
+            <div class="success-meta">
+              <span><i class="fas fa-graduation-cap"></i> Курс: Python для початківців</span>
+              <span><i class="fas fa-calendar"></i> 2023</span>
+            </div>
+            <a href="#" class="read-more">Читати історію</a>
+          </div>
+        </div>
+
+        <div class="success-card" data-category="java">
+          <div class="success-image">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Студент Java">
+          </div>
+          <div class="success-content">
+            <span class="success-category">Java</span>
+            <h3>Олександр Сидоренко</h3>
+            <p class="success-description">Розробив популярний додаток для Android після проходження курсу з Java</p>
+            <div class="success-meta">
+              <span><i class="fas fa-graduation-cap"></i> Курс: Алгоритми на Java</span>
+              <span><i class="fas fa-calendar"></i> 2024</span>
+            </div>
+            <a href="#" class="read-more">Читати історію</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="statistics-section">
+        <h3>Наші досягнення</h3>
+        <div class="statistics-grid">
+          <div class="statistic-card">
+            <i class="fas fa-users"></i>
+            <h4>1000+</h4>
+            <p>Випускників</p>
+          </div>
+          <div class="statistic-card">
+            <i class="fas fa-briefcase"></i>
+            <h4>85%</h4>
+            <p>Працевлаштованих</p>
+          </div>
+          <div class="statistic-card">
+            <i class="fas fa-star"></i>
+            <h4>4.8</h4>
+            <p>Середній рейтинг</p>
+          </div>
+          <div class="statistic-card">
+            <i class="fas fa-project-diagram"></i>
+            <h4>200+</h4>
+            <p>Реалізованих проєктів</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CodeAcademy. Всі права захищено.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 

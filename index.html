@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CodeAcademy — платформа для навчання програмуванню. Почни свій шлях у світ програмування з нами!">
+  <title>CodeAcademy — Платформа для навчання програмуванню</title>
+  
+  <!-- Preload critical assets -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+  <link rel="preload" href="styles.css" as="style">
+  
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <button class="theme-switcher" aria-label="Змінити тему">
+      <i class="fas fa-moon"></i>
+    </button>
+    <div class="header-content">
+      <div class="logo">
+        <i class="fas fa-code"></i>
+        <h1>CodeAcademy</h1>
+      </div>
+      <p>Ласкаво просимо на платформу CodeAcademy, де ти можеш почати свій шлях у світ програмування!</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active"><i class="fas fa-home"></i> Головна</a>
+    <a href="about.html"><i class="fas fa-info-circle"></i> Про нас</a>
+    <a href="courses.html"><i class="fas fa-graduation-cap"></i> Курси</a>
+    <a href="blog.html"><i class="fas fa-blog"></i> Блог</a>
+    <a href="teachers.html"><i class="fas fa-chalkboard-teacher"></i> Викладачі</a>
+    <a href="success.html"><i class="fas fa-trophy"></i> Успіхи</a>
+    <a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Контакти</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Почни навчання прямо зараз</h2>
+        <p>Навчайся програмуванню з найкращими викладачами та отримуй практичні навички</p>
+        <a href="courses.html" class="button">Розпочати навчання</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+             alt="Програмування"
+             loading="lazy"
+             width="500"
+             height="300">
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="slide">Python для початківців</div>
+      <div class="slide">Java: основи</div>
+      <div class="slide">C++: базові конструкції</div>
+      <div class="slide">HTML & CSS: веб-розробка</div>
+      <div class="slide">Алгоритми та структури даних</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CodeAcademy. Всі права захищено.</p>
+  </footer>
+
+  <!-- Defer non-critical JavaScript -->
+  <script src="script.js" defer></script>
+</body>
+</html> 
